@@ -72,12 +72,23 @@ public class TaskComponent extends JPanel implements ActionListener {
         // replaces all html tags to empty string (fixed regex)
         String taskText = taskField.getText().replaceAll("<[^>]*>", "");
 
-        // add strikethrough text
-        taskField.setText("<html><s>" + taskText + "</s></html>");
+        // if text is empty, add placeholder text with strikethrough
+        if (taskText.trim().isEmpty()) {
+          taskField.setText("<html><s>Nova tarefa</s></html>");
+        } else {
+          // add strikethrough text
+          taskField.setText("<html><s>" + taskText + "</s></html>");
+        }
       } else if (!checkBox.isSelected()) {
         // replaces all html tags to empty string (fixed regex)
         String taskText = taskField.getText().replaceAll("<[^>]*>", "");
-        taskField.setText(taskText);
+
+        // if it was the placeholder text, clear it
+        if (taskText.equals("Nova tarefa")) {
+          taskField.setText("");
+        } else {
+          taskField.setText(taskText);
+        }
       }
     } else if (e.getSource() == deleteButton) {
       // remove this task component from parent panel
