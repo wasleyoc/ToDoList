@@ -1,6 +1,8 @@
 # 📝 ToDoList - Aplicação de Lista de Tarefas
 
 Uma aplicação desktop de lista de tarefas desenvolvida em Java com interface gráfica Swing. Simples, intuitiva e eficiente para organizar suas tarefas diárias.
+<img width="540" alt="Screenshot 2025-06-26 at 20 33 14" src="https://github.com/user-attachments/assets/5c5db244-c3c2-48b0-b901-eaf903cee688" />
+
 
 ## ✨ Funcionalidades
 
@@ -87,6 +89,9 @@ ToDoList/
 - **Focus Management**: Destaque visual para tarefa em edição
 
 ## 🎨 Funcionalidades em Detalhes
+
+https://github.com/user-attachments/assets/9df254b3-199a-474e-a530-370a60fadf79
+
 
 ### Adicionar Tarefas
 
